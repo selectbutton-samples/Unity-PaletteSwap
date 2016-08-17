@@ -45,6 +45,11 @@ public class ColorSwapSliders : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (!spriteMat1 || !spriteMat2)
+		{
+			return;
+		}
+		
 		spriteMat1.SetColor ("_Channel1", s1c1);
 		spriteMat1.SetColor ("_Channel2", s1c2);
 		spriteMat1.SetColor ("_Channel3", s1c3);
@@ -57,6 +62,11 @@ public class ColorSwapSliders : MonoBehaviour {
 
 	void OnGUI ()
 	{
+		if (!spriteMat1 || !spriteMat2)
+		{
+			return;
+		}
+		
 		GUILayout.Label ("Sprite 1");
 		GUI.color = s1c1;
 		GUILayout.Label ("Primary Color");
