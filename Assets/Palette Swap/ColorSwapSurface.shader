@@ -2,8 +2,8 @@
 	Properties {
 		_MainTex ("Channels", 2D) = "white" {}
 		_Channel1 ("Channel 1 Color (R)", Color) = (1,1,1,1)
-		_Channel2 ("Channel 2 Color (G)", Color) = (1,1,1,1)
-		_Channel3 ("Channel 3 Color (B)", Color) = (1,1,1,1)
+		_Channel2 ("Channel 2 Color (G)", Color) = (0.66,0.66,0.66,1)
+		_Channel3 ("Channel 3 Color (B)", Color) = (0.33,0.33,0.33,1)
 		_AlphaCutoff ("Alpha Cutoff", Range(0,1))= 0.5
 
 		_Glossiness ("Smoothness", Range(0,1)) = 0.0
